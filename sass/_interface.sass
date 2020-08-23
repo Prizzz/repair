@@ -1,0 +1,51 @@
+*
+    box-sizing: border-box
+    
+body
+    +reg
+img
+    max-width: 100%
+    
+.container
+    width: 1170px
+    margin: auto
+
+.button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 18px 30px
+    outline: none
+    +bold
+    &:hover
+        background-color: lighten($main-color, 5%)
+        cursor: pointer
+.section
+    padding: 90px 0
+    &-title
+        text-align: center
+        font-size: 24px
+        +bold
+        max-width: 500px
+    &-subtitle
+        display: inline-block
+        font-size: 16px
+.input
+    border: 1px solid $border-input
+    outline: none
+    padding: 20px 26px
+    font-size: 15px
+    border-radius: 10px
+    &:focus
+        border: 1px solid $main-color
+.arrows
+    &__left, &__right
+        &:hover
+            cursor: pointer
+.slick-slide img
+    margin: auto
+.error
+    margin-bottom: 10px
+    display: inline-block
+    margin-left: 10px
+        
